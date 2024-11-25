@@ -430,6 +430,12 @@ p, h1, h2, h3, h4 {
   .box-checkbox__btn-mobil-open {
     display: flex;
   }
+  .box-checkbox__btn-mobil-open svg {
+    transition: transform 0.4s ease-in-out;
+  }
+  .box-checkbox__btn-mobil-open.active svg {
+    transform: rotate(180deg);
+  }
   .box-checkbox{
     display: flex;
     justify-content: space-between;
@@ -552,5 +558,11 @@ p, h1, h2, h3, h4 {
   }
   .table-main__row > .column-1 > .box-detailed{
     display: none;
+  }
+  .table-main__row.active > .column-2, .table-main__row.active > .column-3, .table-main__row.active > .column-4, .table-main__row.active > .column-5{
+    display: flex;
+  }
+  .table-main__row.active > .column-1 > .box-detailed{
+    display: flex;
   }
 }

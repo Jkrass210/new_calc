@@ -1595,11 +1595,11 @@
             <p>При оплате за 1 месяц</p>
           </div>
           <div class="info-row info-row-2">
-            <p class="table-main__name-desc">Абонентская плата</p>
+            <p class="table-main__name-desc">Подписка на пользователя</p>
             <p class="price">fffe</p>
           </div>
           <div class="info-row info-row-3">
-            <p class="table-main__name-desc">Подписка на пользователя</p>
+            <p class="table-main__name-desc">Абонентская плата</p>
             <p class="price">3223</p>
           </div>
           <div class="info-row info-row-4">
@@ -1616,11 +1616,11 @@
             <p>При оплате за 6 месяцев (скидка 14.2%)</p>
           </div>
           <div class="info-row info-row-2">
-            <p class="table-main__name-desc">Абонентская плата</p>
+            <p class="table-main__name-desc">Подписка на пользователя</p>
             <p class="price">545345</p>
           </div>
           <div class="info-row info-row-3">
-            <p class="table-main__name-desc">Подписка на пользователя</p>
+            <p class="table-main__name-desc">Абонентская плата</p>
             <p class="price">34534</p>
           </div>
           <div class="info-row info-row-4">
@@ -1637,11 +1637,11 @@
             <p>При оплате за 12 месяцев (скидка 28.5%)</p>
           </div>
           <div class="info-row info-row-2">
-            <p class="table-main__name-desc">Абонентская плата</p>
+            <p class="table-main__name-desc">Подписка на пользователя</p>
             <p class="price">453</p>
           </div>
           <div class="info-row info-row-3">
-            <p class="table-main__name-desc">Подписка на пользователя</p>
+            <p class="table-main__name-desc">Абонентская плата</p>
             <p class="price">345353534</p>
           </div>
           <div class="info-row info-row-4">
@@ -1778,6 +1778,39 @@
 
       // Инициализация
       updateInfoTable();
+
+      document.addEventListener("click", (event) => {
+        // Проверяем, что клик был по кнопке с классом .box-checkbox__btn-mobil-open
+        if (event.target.closest(".box-checkbox__btn-mobil-open")) {
+          const clickedButton = event.target.closest(
+            ".box-checkbox__btn-mobil-open"
+          );
+          const parentRow = clickedButton.closest(".table-main__row");
+
+          // Если у кнопки уже есть класс active, снимаем active со всех элементов
+          if (clickedButton.classList.contains("active")) {
+            clickedButton.classList.remove("active");
+            parentRow.classList.remove("active");
+          } else {
+            // Иначе снимаем active со всех других кнопок и строк
+            document
+              .querySelectorAll(".box-checkbox__btn-mobil-open.active")
+              .forEach((btn) => {
+                btn.classList.remove("active");
+              });
+
+            document
+              .querySelectorAll(".table-main__row.active")
+              .forEach((row) => {
+                row.classList.remove("active");
+              });
+
+            // Добавляем класс active к текущей кнопке и строке
+            clickedButton.classList.add("active");
+            parentRow.classList.add("active");
+          }
+        }
+      });
     </script>
   </body>
 </html>
