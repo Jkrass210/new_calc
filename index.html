@@ -1,0 +1,1511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>new_calc</title>
+
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container-table">
+      <div class="table-main">
+        <div class="table-main__head head flex">
+          <div class="head__name column-1">
+            <p>Наименование опции</p>
+          </div>
+          <div class="head__name column-2">
+            <p>Количество пользователей</p>
+          </div>
+          <div class="head__name column-3">
+            <p>Подписка на 1 пользователь/мес</p>
+          </div>
+          <div class="head__name column-4">
+            <p>Абонентская плата / мес</p>
+          </div>
+          <div class="head__name column-5">
+            <p>Разовый платеж за подключение</p>
+          </div>
+        </div>
+        <div class="table-main__row row row-1 flex">
+          <div class="column column-1">
+            <div class="box-checkbox">
+              <input type="checkbox" name="regAccount" id="regAccount" />
+              <label for="regAccount">
+                <span>
+                  <svg
+                    width="10"
+                    height="12"
+                    viewBox="0 0 10 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 5.5L4 11L9 1"
+                      stroke="#159AF3"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                Регистрация аккаунта на платформе
+              </label>
+              <button class="box-checkbox__btn-mobil-open btn-reset">
+                <svg width="33" height="15" viewBox="0 0 33 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L17 13L32 1" stroke="white" stroke-width="2" stroke-linecap="round" />
+                </svg>
+              </button>
+            </div>
+            <div class="box-detailed">
+              <button class="btn-reset">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.9992 14.0938V11M10.9992 7.90625V7.9838M19.2484 11C19.2484 12.186 18.9982 13.3135 18.5477 14.3326L19.25 19.2492L15.0369 18.1959C13.8434 18.8671 12.466 19.25 10.9992 19.25C6.4433 19.25 2.75 15.5563 2.75 11C2.75 6.44365 6.4433 2.75 10.9992 2.75C15.5551 2.75 19.2484 6.44365 19.2484 11Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <span class="box-detailed__tooltype">
+                  Доступ к просмотру, редактированию и остальному функционалу в зависимости от выбранных подключений и коннекторов и синхронизаций
+                </span>
+              </button>
+              <p class="box-detailed__mobil-desc">
+                Доступ к просмотру, редактированию и остальному функционалу в зависимости от выбранных подключений и коннекторов и синхронизаций
+              </p>
+              <a href="#"> подробнее </a>
+            </div>
+          </div>
+          <div class="column column-2">
+            <p class="table-main__name-desc">
+              Количество пользователей
+            </p>
+            <div class="quantity-selector">
+              <button
+                type="button"
+                class="quantity-selector__btn quantity-selector__btn--minus"
+              >
+                −
+              </button>
+              <input
+                type="text"
+                class="quantity-selector__input"
+                value="1"
+                min="0"
+              />
+              <button
+                type="button"
+                class="quantity-selector__btn quantity-selector__btn--plus"
+              >
+                +
+              </button>
+            </div>
+          </div>
+          <div class="column column-3">
+            <p class="table-main__name-desc">Подписка на 1 пользователь/мес</p>
+            <p>1260 руб.</p>
+          </div>
+          <div class="column column-4">
+            <p class="table-main__name-desc">Абонентская плата / мес</p>
+            <p>-</p>
+          </div>
+          <div class="column column-5">
+            <p class="table-main__name-desc">Разовый платеж за подключение</p>
+            <p>-</p>
+          </div>
+        </div>
+        <div class="table-main__row row row-2 flex">
+          <div class="column column-1">
+            <div class="box-checkbox">
+              <input
+                type="checkbox"
+                name="emailConnection"
+                id="emailConnection"
+              />
+              <label for="emailConnection">
+                <span>
+                  <svg
+                    width="10"
+                    height="12"
+                    viewBox="0 0 10 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 5.5L4 11L9 1"
+                      stroke="#159AF3"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                Подключение электронной почты
+              </label>
+            </div>
+            <div class="box-detailed">
+              <button class="btn-reset">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.9992 14.0938V11M10.9992 7.90625V7.9838M19.2484 11C19.2484 12.186 18.9982 13.3135 18.5477 14.3326L19.25 19.2492L15.0369 18.1959C13.8434 18.8671 12.466 19.25 10.9992 19.25C6.4433 19.25 2.75 15.5563 2.75 11C2.75 6.44365 6.4433 2.75 10.9992 2.75C15.5551 2.75 19.2484 6.44365 19.2484 11Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <span class="box-detailed__tooltype">
+                  Доступ к просмотру, редактированию и остальному функционалу в зависимости от выбранных подключений и коннекторов и синхронизаций
+                </span>
+              </button>
+              <a href="#"> подробнее </a>
+            </div>
+          </div>
+          <div class="column column-2">
+            <p class="table-main__name-desc">
+              Количество пользователей
+            </p>
+            <div class="quantity-selector">
+              <button
+                type="button"
+                class="quantity-selector__btn quantity-selector__btn--minus"
+              >
+                −
+              </button>
+              <input
+                type="text"
+                class="quantity-selector__input"
+                value="1"
+                min="0"
+              />
+              <button
+                type="button"
+                class="quantity-selector__btn quantity-selector__btn--plus"
+              >
+                +
+              </button>
+            </div>
+          </div>
+          <div class="column column-3">
+            <p class="table-main__name-desc">Подписка на 1 пользователь/мес</p>
+            <p>140 руб.</p>
+          </div>
+          <div class="column column-4">
+            <p class="table-main__name-desc">Абонентская плата / мес</p>
+            <p>-</p>
+          </div>
+          <div class="column column-5">
+            <p class="table-main__name-desc">Разовый платеж за подключение</p>
+            <p>2700 руб.</p>
+          </div>
+        </div>
+        <div class="table-main__row row row-3 flex">
+          <div class="column column-1">
+            <div class="box-checkbox">
+              <input
+                type="checkbox"
+                name="connectingTelephony"
+                id="connectingTelephony"
+              />
+              <label for="connectingTelephony">
+                <span>
+                  <svg
+                    width="10"
+                    height="12"
+                    viewBox="0 0 10 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 5.5L4 11L9 1"
+                      stroke="#159AF3"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                Подключение телефонии
+              </label>
+            </div>
+            <div class="box-detailed">
+              <button class="btn-reset">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.9992 14.0938V11M10.9992 7.90625V7.9838M19.2484 11C19.2484 12.186 18.9982 13.3135 18.5477 14.3326L19.25 19.2492L15.0369 18.1959C13.8434 18.8671 12.466 19.25 10.9992 19.25C6.4433 19.25 2.75 15.5563 2.75 11C2.75 6.44365 6.4433 2.75 10.9992 2.75C15.5551 2.75 19.2484 6.44365 19.2484 11Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <span class="box-detailed__tooltype">
+                  Доступ к просмотру, редактированию и остальному функционалу в зависимости от выбранных подключений и коннекторов и синхронизаций
+                </span>
+              </button>
+              <a href="#"> подробнее </a>
+            </div>
+          </div>
+          <div class="column column-2">
+            <p class="table-main__name-desc">
+              Количество пользователей
+            </p>
+            <div class="quantity-selector">
+              <button
+                type="button"
+                class="quantity-selector__btn quantity-selector__btn--minus"
+              >
+                −
+              </button>
+              <input
+                type="text"
+                class="quantity-selector__input"
+                value="1"
+                min="0"
+              />
+              <button
+                type="button"
+                class="quantity-selector__btn quantity-selector__btn--plus"
+              >
+                +
+              </button>
+            </div>
+          </div>
+          <div class="column column-3">
+            <p class="table-main__name-desc">Подписка на 1 пользователь/мес</p>
+            <p>700 руб.</p>
+          </div>
+          <div class="column column-4">
+            <p class="table-main__name-desc">Абонентская плата / мес</p>
+            <p>-</p>
+          </div>
+          <div class="column column-5">
+            <p class="table-main__name-desc">Разовый платеж за подключение</p>
+            <p>5000 руб.</p>
+          </div>
+        </div>
+        <div class="table-main__row row row-4 flex">
+          <div class="column column-1">
+            <div class="box-checkbox">
+              <input
+                type="checkbox"
+                name="simEsim"
+                id="simEsim"
+              />
+              <label for="simEsim">
+                <span>
+                  <svg
+                    width="10"
+                    height="12"
+                    viewBox="0 0 10 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 5.5L4 11L9 1"
+                      stroke="#159AF3"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                Подключение sim/esim карты
+              </label>
+            </div>
+            <div class="box-detailed">
+              <button class="btn-reset">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.9992 14.0938V11M10.9992 7.90625V7.9838M19.2484 11C19.2484 12.186 18.9982 13.3135 18.5477 14.3326L19.25 19.2492L15.0369 18.1959C13.8434 18.8671 12.466 19.25 10.9992 19.25C6.4433 19.25 2.75 15.5563 2.75 11C2.75 6.44365 6.4433 2.75 10.9992 2.75C15.5551 2.75 19.2484 6.44365 19.2484 11Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <span class="box-detailed__tooltype">
+                  Доступ к просмотру, редактированию и остальному функционалу в зависимости от выбранных подключений и коннекторов и синхронизаций
+                </span>
+              </button>
+              <a href="#"> подробнее </a>
+            </div>
+          </div>
+          <div class="column column-2">
+            <p class="table-main__name-desc">
+              Количество пользователей
+            </p>
+            <div class="quantity-selector">
+              <button
+                type="button"
+                class="quantity-selector__btn quantity-selector__btn--minus"
+              >
+                −
+              </button>
+              <input
+                type="text"
+                class="quantity-selector__input"
+                value="1"
+                min="0"
+              />
+              <button
+                type="button"
+                class="quantity-selector__btn quantity-selector__btn--plus"
+              >
+                +
+              </button>
+            </div>
+          </div>
+          <div class="column column-3">
+            <p class="table-main__name-desc">Подписка на 1 пользователь/мес</p>
+            <p>2100 руб.</p>
+          </div>
+          <div class="column column-4">
+            <p class="table-main__name-desc">Абонентская плата / мес</p>
+            <p>-</p>
+          </div>
+          <div class="column column-5">
+            <p class="table-main__name-desc">Разовый платеж за подключение</p>
+            <p>5000 руб.</p>
+          </div>
+        </div>
+        <div class="table-main__row row row-5 flex">
+          <div class="column column-1">
+            <div class="box-checkbox">
+              <input
+                type="checkbox"
+                name="wu"
+                id="wu"
+              />
+              <label for="wu">
+                <span>
+                  <svg
+                    width="10"
+                    height="12"
+                    viewBox="0 0 10 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 5.5L4 11L9 1"
+                      stroke="#159AF3"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                Подключение вотсап
+              </label>
+            </div>
+            <div class="box-detailed">
+              <button class="btn-reset">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.9992 14.0938V11M10.9992 7.90625V7.9838M19.2484 11C19.2484 12.186 18.9982 13.3135 18.5477 14.3326L19.25 19.2492L15.0369 18.1959C13.8434 18.8671 12.466 19.25 10.9992 19.25C6.4433 19.25 2.75 15.5563 2.75 11C2.75 6.44365 6.4433 2.75 10.9992 2.75C15.5551 2.75 19.2484 6.44365 19.2484 11Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <span class="box-detailed__tooltype">
+                  Доступ к просмотру, редактированию и остальному функционалу в зависимости от выбранных подключений и коннекторов и синхронизаций
+                </span>
+              </button>
+              <a href="#"> подробнее </a>
+            </div>
+          </div>
+          <div class="column column-2">
+            <p class="table-main__name-desc">
+              Количество пользователей
+            </p>
+            <div class="quantity-selector">
+              <button
+                type="button"
+                class="quantity-selector__btn quantity-selector__btn--minus"
+              >
+                −
+              </button>
+              <input
+                type="text"
+                class="quantity-selector__input"
+                value="1"
+                min="0"
+              />
+              <button
+                type="button"
+                class="quantity-selector__btn quantity-selector__btn--plus"
+              >
+                +
+              </button>
+            </div>
+          </div>
+          <div class="column column-3">
+            <p class="table-main__name-desc">Подписка на 1 пользователь/мес</p>
+            <p>3780 руб.</p>
+          </div>
+          <div class="column column-4">
+            <p class="table-main__name-desc">Абонентская плата / мес</p>
+            <p>-</p>
+          </div>
+          <div class="column column-5">
+            <p class="table-main__name-desc">Разовый платеж за подключение</p>
+            <p> 15000 руб.</p>
+          </div>
+        </div>
+        <div class="table-main__row row row-6 flex">
+          <div class="column column-1">
+            <div class="box-checkbox">
+              <input
+                type="checkbox"
+                name="tg"
+                id="tg"
+              />
+              <label for="tg">
+                <span>
+                  <svg
+                    width="10"
+                    height="12"
+                    viewBox="0 0 10 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 5.5L4 11L9 1"
+                      stroke="#159AF3"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                Подключение телеграмм
+              </label>
+            </div>
+            <div class="box-detailed">
+              <button class="btn-reset">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.9992 14.0938V11M10.9992 7.90625V7.9838M19.2484 11C19.2484 12.186 18.9982 13.3135 18.5477 14.3326L19.25 19.2492L15.0369 18.1959C13.8434 18.8671 12.466 19.25 10.9992 19.25C6.4433 19.25 2.75 15.5563 2.75 11C2.75 6.44365 6.4433 2.75 10.9992 2.75C15.5551 2.75 19.2484 6.44365 19.2484 11Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <span class="box-detailed__tooltype">
+                  Доступ к просмотру, редактированию и остальному функционалу в зависимости от выбранных подключений и коннекторов и синхронизаций
+                </span>
+              </button>
+              <a href="#"> подробнее </a>
+            </div>
+          </div>
+          <div class="column column-2">
+            <p class="table-main__name-desc">
+              Количество пользователей
+            </p>
+            <div class="quantity-selector">
+              <button
+                type="button"
+                class="quantity-selector__btn quantity-selector__btn--minus"
+              >
+                −
+              </button>
+              <input
+                type="text"
+                class="quantity-selector__input"
+                value="1"
+                min="0"
+              />
+              <button
+                type="button"
+                class="quantity-selector__btn quantity-selector__btn--plus"
+              >
+                +
+              </button>
+            </div>
+          </div>
+          <div class="column column-3">
+            <p class="table-main__name-desc">Подписка на 1 пользователь/мес</p>
+            <p>3780 руб.</p>
+          </div>
+          <div class="column column-4">
+            <p class="table-main__name-desc">Абонентская плата / мес</p>
+            <p>-</p>
+          </div>
+          <div class="column column-5">
+            <p class="table-main__name-desc">Разовый платеж за подключение</p>
+            <p> 15000 руб.</p>
+          </div>
+        </div>
+        <div class="table-main__row row row-7 flex">
+          <div class="column column-1">
+            <div class="box-checkbox">
+              <input
+                type="checkbox"
+                name="emailCorrespondence"
+                id="emailCorrespondence"
+              />
+              <label for="emailCorrespondence">
+                <span>
+                  <svg
+                    width="10"
+                    height="12"
+                    viewBox="0 0 10 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 5.5L4 11L9 1"
+                      stroke="#159AF3"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                Коннектор истории переписки электронной почты
+              </label>
+            </div>
+            <div class="box-detailed">
+              <button class="btn-reset">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.9992 14.0938V11M10.9992 7.90625V7.9838M19.2484 11C19.2484 12.186 18.9982 13.3135 18.5477 14.3326L19.25 19.2492L15.0369 18.1959C13.8434 18.8671 12.466 19.25 10.9992 19.25C6.4433 19.25 2.75 15.5563 2.75 11C2.75 6.44365 6.4433 2.75 10.9992 2.75C15.5551 2.75 19.2484 6.44365 19.2484 11Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <span class="box-detailed__tooltype">
+                  Доступ к просмотру, редактированию и остальному функционалу в зависимости от выбранных подключений и коннекторов и синхронизаций
+                </span>
+              </button>
+              <a href="#"> подробнее </a>
+            </div>
+          </div>
+          <div class="column column-2">
+            <p class="table-main__name-desc">
+              Количество пользователей
+            </p>
+            <div class="quantity-selector">
+              <button
+                type="button"
+                class="quantity-selector__btn quantity-selector__btn--minus"
+              >
+                −
+              </button>
+              <input
+                type="text"
+                class="quantity-selector__input"
+                value="1"
+                min="0"
+              />
+              <button
+                type="button"
+                class="quantity-selector__btn quantity-selector__btn--plus"
+              >
+                +
+              </button>
+            </div>
+          </div>
+          <div class="column column-3">
+            <p class="table-main__name-desc">Подписка на 1 пользователь/мес</p>
+            <p>-</p>
+          </div>
+          <div class="column column-4">
+            <p class="table-main__name-desc">Абонентская плата / мес</p>
+            <p>-</p>
+          </div>
+          <div class="column column-5">
+            <p class="table-main__name-desc">Разовый платеж за подключение</p>
+            <p>7000 руб.</p>
+          </div>
+        </div>
+        <div class="table-main__row row row-8 flex">
+          <div class="column column-1">
+            <div class="box-checkbox">
+              <input
+                type="checkbox"
+                name="messengersCorrespondence"
+                id="messengersCorrespondence"
+              />
+              <label for="messengersCorrespondence">
+                <span>
+                  <svg
+                    width="10"
+                    height="12"
+                    viewBox="0 0 10 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 5.5L4 11L9 1"
+                      stroke="#159AF3"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                Коннектор истории переписки в мессенджерах
+              </label>
+            </div>
+            <div class="box-detailed">
+              <button class="btn-reset">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.9992 14.0938V11M10.9992 7.90625V7.9838M19.2484 11C19.2484 12.186 18.9982 13.3135 18.5477 14.3326L19.25 19.2492L15.0369 18.1959C13.8434 18.8671 12.466 19.25 10.9992 19.25C6.4433 19.25 2.75 15.5563 2.75 11C2.75 6.44365 6.4433 2.75 10.9992 2.75C15.5551 2.75 19.2484 6.44365 19.2484 11Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <span class="box-detailed__tooltype">
+                  Доступ к просмотру, редактированию и остальному функционалу в зависимости от выбранных подключений и коннекторов и синхронизаций
+                </span>
+              </button>
+              <a href="#"> подробнее </a>
+            </div>
+          </div>
+          <div class="column column-2">
+            <p class="table-main__name-desc">
+              Количество пользователей
+            </p>
+            <div class="quantity-selector">
+              <button
+                type="button"
+                class="quantity-selector__btn quantity-selector__btn--minus"
+              >
+                −
+              </button>
+              <input
+                type="text"
+                class="quantity-selector__input"
+                value="1"
+                min="0"
+              />
+              <button
+                type="button"
+                class="quantity-selector__btn quantity-selector__btn--plus"
+              >
+                +
+              </button>
+            </div>
+          </div>
+          <div class="column column-3">
+            <p class="table-main__name-desc">Подписка на 1 пользователь/мес</p>
+            <p>-</p>
+          </div>
+          <div class="column column-4">
+            <p class="table-main__name-desc">Абонентская плата / мес</p>
+            <p>-</p>
+          </div>
+          <div class="column column-5">
+            <p class="table-main__name-desc">Разовый платеж за подключение</p>
+            <p>7000 руб.</p>
+          </div>
+        </div>
+        <div class="table-main__row row row-9 flex">
+          <div class="column column-1">
+            <div class="box-checkbox">
+              <input
+                type="checkbox"
+                name="historyNegotiation"
+                id="historyNegotiation"
+              />
+              <label for="historyNegotiation">
+                <span>
+                  <svg
+                    width="10"
+                    height="12"
+                    viewBox="0 0 10 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 5.5L4 11L9 1"
+                      stroke="#159AF3"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                Коннектор истории переговоров
+              </label>
+            </div>
+            <div class="box-detailed">
+              <button class="btn-reset">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.9992 14.0938V11M10.9992 7.90625V7.9838M19.2484 11C19.2484 12.186 18.9982 13.3135 18.5477 14.3326L19.25 19.2492L15.0369 18.1959C13.8434 18.8671 12.466 19.25 10.9992 19.25C6.4433 19.25 2.75 15.5563 2.75 11C2.75 6.44365 6.4433 2.75 10.9992 2.75C15.5551 2.75 19.2484 6.44365 19.2484 11Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <span class="box-detailed__tooltype">
+                  Доступ к просмотру, редактированию и остальному функционалу в зависимости от выбранных подключений и коннекторов и синхронизаций
+                </span>
+              </button>
+              <a href="#"> подробнее </a>
+            </div>
+          </div>
+          <div class="column column-2">
+            <p class="table-main__name-desc">
+              Количество пользователей
+            </p>
+            <div class="quantity-selector">
+              <button
+                type="button"
+                class="quantity-selector__btn quantity-selector__btn--minus"
+              >
+                −
+              </button>
+              <input
+                type="text"
+                class="quantity-selector__input"
+                value="1"
+                min="0"
+              />
+              <button
+                type="button"
+                class="quantity-selector__btn quantity-selector__btn--plus"
+              >
+                +
+              </button>
+            </div>
+          </div>
+          <div class="column column-3">
+            <p class="table-main__name-desc">Подписка на 1 пользователь/мес</p>
+            <p>-</p>
+          </div>
+          <div class="column column-4">
+            <p class="table-main__name-desc">Абонентская плата / мес</p>
+            <p>-</p>
+          </div>
+          <div class="column column-5">
+            <p class="table-main__name-desc">Разовый платеж за подключение</p>
+            <p>7000 руб.</p>
+          </div>
+        </div>
+        <div class="table-main__row row row-10 flex">
+          <div class="column column-1">
+            <div class="box-checkbox">
+              <input
+                type="checkbox"
+                name="importAggregation"
+                id="importAggregation"
+              />
+              <label for="importAggregation">
+                <span>
+                  <svg
+                    width="10"
+                    height="12"
+                    viewBox="0 0 10 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 5.5L4 11L9 1"
+                      stroke="#159AF3"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                Агрегирование баз данных для импорта
+              </label>
+            </div>
+            <div class="box-detailed">
+              <button class="btn-reset">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.9992 14.0938V11M10.9992 7.90625V7.9838M19.2484 11C19.2484 12.186 18.9982 13.3135 18.5477 14.3326L19.25 19.2492L15.0369 18.1959C13.8434 18.8671 12.466 19.25 10.9992 19.25C6.4433 19.25 2.75 15.5563 2.75 11C2.75 6.44365 6.4433 2.75 10.9992 2.75C15.5551 2.75 19.2484 6.44365 19.2484 11Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <span class="box-detailed__tooltype">
+                  Доступ к просмотру, редактированию и остальному функционалу в зависимости от выбранных подключений и коннекторов и синхронизаций
+                </span>
+              </button>
+              <a href="#"> подробнее </a>
+            </div>
+          </div>
+          <div class="column column-2">
+            <p class="table-main__name-desc">
+              Количество пользователей
+            </p>
+            <div class="quantity-selector">
+              <button
+                type="button"
+                class="quantity-selector__btn quantity-selector__btn--minus"
+              >
+                −
+              </button>
+              <input
+                type="text"
+                class="quantity-selector__input"
+                value="1"
+                min="0"
+              />
+              <button
+                type="button"
+                class="quantity-selector__btn quantity-selector__btn--plus"
+              >
+                +
+              </button>
+            </div>
+          </div>
+          <div class="column column-3">
+            <p class="table-main__name-desc">Подписка на 1 пользователь/мес</p>
+            <p>-</p>
+          </div>
+          <div class="column column-4">
+            <p class="table-main__name-desc">Абонентская плата / мес</p>
+            <p>-</p>
+          </div>
+          <div class="column column-5">
+            <p class="table-main__name-desc">Разовый платеж за подключение</p>
+            <p>2000 руб.</p>
+          </div>
+        </div>
+        <div class="table-main__row row row-11 flex">
+          <div class="column column-1">
+            <div class="box-checkbox">
+              <input
+                type="checkbox"
+                name="intelligenceConnector"
+                id="intelligenceConnector"
+              />
+              <label for="intelligenceConnector">
+                <span>
+                  <svg
+                    width="10"
+                    height="12"
+                    viewBox="0 0 10 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 5.5L4 11L9 1"
+                      stroke="#159AF3"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                Коннектор для искуственного интеллекта
+              </label>
+            </div>
+            <div class="box-detailed">
+              <button class="btn-reset">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.9992 14.0938V11M10.9992 7.90625V7.9838M19.2484 11C19.2484 12.186 18.9982 13.3135 18.5477 14.3326L19.25 19.2492L15.0369 18.1959C13.8434 18.8671 12.466 19.25 10.9992 19.25C6.4433 19.25 2.75 15.5563 2.75 11C2.75 6.44365 6.4433 2.75 10.9992 2.75C15.5551 2.75 19.2484 6.44365 19.2484 11Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <span class="box-detailed__tooltype">
+                  Доступ к просмотру, редактированию и остальному функционалу в зависимости от выбранных подключений и коннекторов и синхронизаций
+                </span>
+              </button>
+              <a href="#"> подробнее </a>
+            </div>
+          </div>
+          <div class="column column-2">
+            <p class="table-main__name-desc">
+              Количество пользователей
+            </p>
+            <div class="quantity-selector">
+              <button
+                type="button"
+                class="quantity-selector__btn quantity-selector__btn--minus"
+              >
+                −
+              </button>
+              <input
+                type="text"
+                class="quantity-selector__input"
+                value="1"
+                min="0"
+              />
+              <button
+                type="button"
+                class="quantity-selector__btn quantity-selector__btn--plus"
+              >
+                +
+              </button>
+            </div>
+          </div>
+          <div class="column column-3">
+            <p class="table-main__name-desc">Подписка на 1 пользователь/мес</p>
+            <p>-</p>
+          </div>
+          <div class="column column-4">
+            <p class="table-main__name-desc">Абонентская плата / мес</p>
+            <p>98000 руб.</p>
+          </div>
+          <div class="column column-5">
+            <p class="table-main__name-desc">Разовый платеж за подключение</p>
+            <p>30000 руб.</p>
+          </div>
+        </div>
+        <div class="table-main__row row row-12 flex">
+          <div class="column column-1">
+            <div class="box-checkbox">
+              <input
+                type="checkbox"
+                name="generatorSuppliers"
+                id="generatorSuppliers"
+              />
+              <label for="generatorSuppliers">
+                <span>
+                  <svg
+                    width="10"
+                    height="12"
+                    viewBox="0 0 10 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 5.5L4 11L9 1"
+                      stroke="#159AF3"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                Генератор идей для отработки возражений клиентов, поставщиков
+              </label>
+            </div>
+            <div class="box-detailed">
+              <button class="btn-reset">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.9992 14.0938V11M10.9992 7.90625V7.9838M19.2484 11C19.2484 12.186 18.9982 13.3135 18.5477 14.3326L19.25 19.2492L15.0369 18.1959C13.8434 18.8671 12.466 19.25 10.9992 19.25C6.4433 19.25 2.75 15.5563 2.75 11C2.75 6.44365 6.4433 2.75 10.9992 2.75C15.5551 2.75 19.2484 6.44365 19.2484 11Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <span class="box-detailed__tooltype">
+                  Доступ к просмотру, редактированию и остальному функционалу в зависимости от выбранных подключений и коннекторов и синхронизаций
+                </span>
+              </button>
+              <a href="#"> подробнее </a>
+            </div>
+          </div>
+          <div class="column column-2">
+            <p class="table-main__name-desc">
+              Количество пользователей
+            </p>
+            <div class="quantity-selector">
+              <button
+                type="button"
+                class="quantity-selector__btn quantity-selector__btn--minus"
+              >
+                −
+              </button>
+              <input
+                type="text"
+                class="quantity-selector__input"
+                value="1"
+                min="0"
+              />
+              <button
+                type="button"
+                class="quantity-selector__btn quantity-selector__btn--plus"
+              >
+                +
+              </button>
+            </div>
+          </div>
+          <div class="column column-3">
+            <p class="table-main__name-desc">Подписка на 1 пользователь/мес</p>
+            <p>-</p>
+          </div>
+          <div class="column column-4">
+            <p class="table-main__name-desc">Абонентская плата / мес</p>
+            <p>63000 руб.</p>
+          </div>
+          <div class="column column-5">
+            <p class="table-main__name-desc">Разовый платеж за подключение</p>
+            <p>96000 руб.</p>
+          </div>
+        </div>
+        <div class="table-main__row row row-13 flex">
+          <div class="column column-1">
+            <div class="box-checkbox">
+              <input
+                type="checkbox"
+                name="1c"
+                id="1c"
+              />
+              <label for="1c">
+                <span>
+                  <svg
+                    width="10"
+                    height="12"
+                    viewBox="0 0 10 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 5.5L4 11L9 1"
+                      stroke="#159AF3"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                1С синхронизация
+              </label>
+            </div>
+            <div class="box-detailed">
+              <button class="btn-reset">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.9992 14.0938V11M10.9992 7.90625V7.9838M19.2484 11C19.2484 12.186 18.9982 13.3135 18.5477 14.3326L19.25 19.2492L15.0369 18.1959C13.8434 18.8671 12.466 19.25 10.9992 19.25C6.4433 19.25 2.75 15.5563 2.75 11C2.75 6.44365 6.4433 2.75 10.9992 2.75C15.5551 2.75 19.2484 6.44365 19.2484 11Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <span class="box-detailed__tooltype">
+                  Доступ к просмотру, редактированию и остальному функционалу в зависимости от выбранных подключений и коннекторов и синхронизаций
+                </span>
+              </button>
+              <a href="#"> подробнее </a>
+            </div>
+          </div>
+          <div class="column column-2">
+            <p class="table-main__name-desc">
+              Количество пользователей
+            </p>
+            <div class="quantity-selector">
+              <button
+                type="button"
+                class="quantity-selector__btn quantity-selector__btn--minus"
+              >
+                −
+              </button>
+              <input
+                type="text"
+                class="quantity-selector__input"
+                value="1"
+                min="0"
+              />
+              <button
+                type="button"
+                class="quantity-selector__btn quantity-selector__btn--plus"
+              >
+                +
+              </button>
+            </div>
+          </div>
+          <div class="column column-3">
+            <p class="table-main__name-desc">Подписка на 1 пользователь/мес</p>
+            <p>-</p>
+          </div>
+          <div class="column column-4">
+            <p class="table-main__name-desc">Абонентская плата / мес</p>
+            <p>21000 руб.</p>
+          </div>
+          <div class="column column-5">
+            <p class="table-main__name-desc">Разовый платеж за подключение</p>
+            <p>17000 руб.</p>
+          </div>
+        </div>
+        <div class="table-main__row row row-14 flex">
+          <div class="column column-1">
+            <div class="box-checkbox">
+              <input
+                type="checkbox"
+                name="hostingData"
+                id="hostingData"
+              />
+              <label for="hostingData">
+                <span>
+                  <svg
+                    width="10"
+                    height="12"
+                    viewBox="0 0 10 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 5.5L4 11L9 1"
+                      stroke="#159AF3"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                Хостинг данных (Гб)
+              </label>
+            </div>
+            <div class="box-detailed">
+              <button class="btn-reset">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.9992 14.0938V11M10.9992 7.90625V7.9838M19.2484 11C19.2484 12.186 18.9982 13.3135 18.5477 14.3326L19.25 19.2492L15.0369 18.1959C13.8434 18.8671 12.466 19.25 10.9992 19.25C6.4433 19.25 2.75 15.5563 2.75 11C2.75 6.44365 6.4433 2.75 10.9992 2.75C15.5551 2.75 19.2484 6.44365 19.2484 11Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <span class="box-detailed__tooltype">
+                  Доступ к просмотру, редактированию и остальному функционалу в зависимости от выбранных подключений и коннекторов и синхронизаций
+                </span>
+              </button>
+              <a href="#"> подробнее </a>
+            </div>
+          </div>
+          <div class="column column-2">
+            <p class="table-main__name-desc">
+              Количество пользователей
+            </p>
+            <div class="quantity-selector">
+              <button
+                type="button"
+                class="quantity-selector__btn quantity-selector__btn--minus"
+              >
+                −
+              </button>
+              <input
+                type="text"
+                class="quantity-selector__input"
+                value="1"
+                min="0"
+              />
+              <button
+                type="button"
+                class="quantity-selector__btn quantity-selector__btn--plus"
+              >
+                +
+              </button>
+            </div>
+          </div>
+          <div class="column column-3">
+            <p class="table-main__name-desc">Подписка на 1 пользователь/мес</p>
+            <p>-</p>
+          </div>
+          <div class="column column-4">
+            <p class="table-main__name-desc">Абонентская плата / мес</p>
+            <p>21000 руб.</p>
+          </div>
+          <div class="column column-5">
+            <p class="table-main__name-desc">Разовый платеж за подключение</p>
+            <p>15000 руб.</p>
+          </div>
+        </div>
+      </div>
+      <div class="table-info">
+        <div class="table-info__head">
+          <div class="head__name head__name-info orange info-row-1">
+            <h2>СТОИМОСТЬ</h2>
+          </div>
+          <div class="head__name head__name-info info-row info-row-2">
+            <p>Подписка на пользователя</p>
+          </div>
+          <div class="head__name head__name-info info-row info-row-3">
+            <p>Абонентская плата</p>
+          </div>
+          <div class="head__name head__name-info info-row info-row-4">
+            <p>Разовый платеж за подключение</p>
+          </div>
+          <div class="head__name head__name-info orange info-row">
+            <h3>Итого к оплате</h3>
+          </div>
+        </div>
+        <div class="table-info__column-1">
+          <div class="head__name head head-info info-row-1">
+            <p>При оплате за 1 месяц</p>
+          </div>
+          <div class="info-row info-row-2">
+            <p>fffe</p>
+          </div>
+          <div class="info-row info-row-3">
+            <p>3223</p>
+          </div>
+          <div class="info-row info-row-4">
+            <p>2424</p>
+          </div>
+          <div class="info-row info-row-5">
+            <p>2424</p>
+          </div>
+        </div>
+        <div class="table-info__column-2">
+          <div class="head__name head head-info info-row-1">
+            <p>При оплате за 6 месяцев (скидка 14.2%)</p>
+          </div>
+          <div class="info-row info-row-2">
+            <p>545345</p>
+          </div>
+          <div class="info-row info-row-3">
+            <p>34534</p>
+          </div>
+          <div class="info-row info-row-4">
+            <p>243453424</p>
+          </div>
+          <div class="info-row info-row-5">
+            <p>43534</p>
+          </div>
+        </div>
+        <div class="table-info__column-3">
+          <div class="head__name head head-info info-row-1">
+            <p>При оплате за 12 месяцев (скидка 28.5%)</p>
+          </div>
+          <div class="info-row info-row-2">
+            <p>453</p>
+          </div>
+          <div class="info-row info-row-3">
+            <p>345353534</p>
+          </div>
+          <div class="info-row info-row-4">
+            <p>3535</p>
+          </div>
+          <div class="info-row info-row-5">
+            <p>3223</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const mainTable = document.querySelector(".table-main");
+      const infoTable = document.querySelector(".table-info");
+
+      function calculateRow(row) {
+        const checkbox = row.querySelector('input[type="checkbox"]');
+        const quantityInput = row.querySelector(".quantity-selector__input");
+        const pricePerUserText = row
+          .querySelector(".column-3 p")
+          .textContent.trim();
+        const monthlyFeeText = row
+          .querySelector(".column-4 p")
+          .textContent.trim();
+        const setupFeeText = row
+          .querySelector(".column-5 p")
+          .textContent.trim();
+
+        if (
+          !checkbox.checked ||
+          isNaN(quantityInput.value) ||
+          quantityInput.value <= 0
+        ) {
+          return { perUser: 0, monthlyFee: 0, setupFee: 0 };
+        }
+
+        const quantity = parseInt(quantityInput.value, 10);
+        const pricePerUser =
+          pricePerUserText === "-"
+            ? 0
+            : parseFloat(pricePerUserText.replace("руб.", "").trim());
+        const monthlyFee =
+          monthlyFeeText === "-"
+            ? 0
+            : parseFloat(monthlyFeeText.replace("руб.", "").trim());
+        const setupFee =
+          setupFeeText === "-"
+            ? 0
+            : parseFloat(setupFeeText.replace("руб.", "").trim());
+
+        return {
+          perUser: pricePerUser * quantity,
+          monthlyFee: monthlyFee,
+          setupFee: setupFee,
+        };
+      }
+
+      function updateInfoTable() {
+        const rows = mainTable.querySelectorAll(".table-main__row");
+        const results = {
+          perUser: 0,
+          monthlyFee: 0,
+          setupFee: 0,
+        };
+
+        rows.forEach((row) => {
+          const rowResult = calculateRow(row);
+          results.perUser += rowResult.perUser;
+          results.monthlyFee += rowResult.monthlyFee;
+          results.setupFee += rowResult.setupFee;
+        });
+
+        // Скидки и месяцы
+        const discounts = [0, 0.142, 0.285]; // Без скидки, 14.2%, 28.5%
+        const months = [1, 6, 12]; // Количество месяцев для каждого тарифа
+
+        discounts.forEach((discount, index) => {
+          const column = infoTable.querySelector(
+            `.table-info__column-${index + 1}`
+          );
+          if (column) {
+            // Персональная подписка на пользователя с учетом скидки
+            const perUser = results.perUser * (1 - discount);
+            column.querySelector(
+              ".info-row-2"
+            ).innerHTML = `<p>${perUser.toFixed(2)} руб.</p>`;
+
+            // Абонентская плата с учетом скидки
+            const monthlyFee = results.monthlyFee * (1 - discount);
+            column.querySelector(
+              ".info-row-3"
+            ).innerHTML = `<p>${monthlyFee.toFixed(2)} руб.</p>`;
+
+            // Разовый платеж за подключение (без скидки)
+            const setupFee = results.setupFee;
+            column.querySelector(
+              ".info-row-4"
+            ).innerHTML = `<p>${setupFee.toFixed(2)} руб.</p>`;
+
+            // Итого к оплате: подписка * месяцы + разовый платеж
+            const total =
+              perUser * months[index] + monthlyFee * months[index] + setupFee;
+            column.querySelector(".info-row-5").innerHTML = `<p>${total.toFixed(
+              2
+            )} руб.</p>`;
+          }
+        });
+      }
+
+      // Обработчики событий
+      mainTable.addEventListener("change", (e) => {
+        if (
+          e.target.matches('input[type="checkbox"]') ||
+          e.target.matches(".quantity-selector__input")
+        ) {
+          updateInfoTable();
+        }
+      });
+
+      mainTable.addEventListener("click", (e) => {
+        if (e.target.matches(".quantity-selector__btn")) {
+          const input = e.target
+            .closest(".quantity-selector")
+            .querySelector(".quantity-selector__input");
+          let value = parseInt(input.value, 10) || 0;
+          if (e.target.classList.contains("quantity-selector__btn--plus")) {
+            value++;
+          } else if (
+            e.target.classList.contains("quantity-selector__btn--minus") &&
+            value > 0
+          ) {
+            value--;
+          }
+          input.value = value;
+          updateInfoTable();
+        }
+      });
+
+      // Инициализация
+      updateInfoTable();
+    </script>
+  </body>
+</html>
